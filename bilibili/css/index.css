@@ -103,8 +103,7 @@ body {
 .ss {
   position: relative;
   padding: 0;
-  background-color: rgba(#fff, #fff, #fff, 1);
-  background-color: #DEE0E3;
+  background-color: rgba(225, 225, 225, 0);
   margin-top: 15px;
   margin-left: 70px;
   padding: 2px 20px 0 3px;
@@ -112,8 +111,14 @@ body {
 }
 .ss form {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
+  background-color: #DEE0E3;
+}
+.ss form a {
+  padding-right: 15px;
+  text-decoration: none;
+  color: black;
 }
 .ss form i {
   font-size: 20px;
@@ -131,19 +136,17 @@ body {
   background-color: #fff;
 }
 .ss .hot_search {
-  display: none ;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 8px 16px 0 16px;
+  display: none;
+  text-indent: 2rem;
+  padding-bottom: 10px;
 }
 .ss .ssa {
-  display: none ;
-  display: flex;
-  justify-content: space-around;
+  display: none;
 }
 .ss .ssa .left {
+  float: left;
   margin-left: -10px;
+  text-indent: 2rem;
 }
 .ss .ssa .left img {
   width: 18px;
@@ -157,6 +160,7 @@ body {
   align-items: center;
 }
 .ss .ssa .right {
+  float: right;
   line-height: 30px;
 }
 .ssm {
