@@ -12,12 +12,8 @@
 }
 body {
   background-color: skyblue;
-  margin: 0px;
   width: 100%;
-  min-width: 1500px;
-  max-width: 100%;
-  height: 100%;
-  background-color: #F0F0F0;
+  min-width: 1271px;
   overflow: auto;
 }
 .ff {
@@ -37,7 +33,7 @@ body {
   list-style: none;
 }
 .ff ul li {
-  padding: 0 16px 0 14px !important ;
+  padding: 0 16px 0 14px ;
   margin-left: -12px;
 }
 .ff ul li img {
@@ -68,10 +64,47 @@ body {
 .ff ul li a:hover {
   color: #fff;
 }
+@media screen and (max-width: 1682px) {
+  .ff {
+    padding-right: 0;
+  }
+  .ff ul {
+    margin-right: -80px;
+  }
+  .ff .ssm ul {
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 1605px) {
+  .ssm li {
+    padding-left: 10px !important;
+  }
+}
+@media screen and (max-width: 1406px) {
+  .ff ul li {
+    padding: 0 25px 0 0 ;
+  }
+}
+@media screen and (max-width: 1438px) {
+  .ssm li {
+    margin-top: 10px;
+  }
+  .ssm li a {
+    display: none;
+  }
+  .ssm li i {
+    letter-spacing: 10px;
+  }
+  .ssm .bbt {
+    height: 30px !important;
+    width: 40px !important;
+  }
+}
 .ss {
   position: relative;
   padding: 0;
   background-color: rgba(#fff, #fff, #fff, 1);
+  background-color: #DEE0E3;
   margin-top: 15px;
   margin-left: 70px;
   padding: 2px 20px 0 3px;
@@ -142,6 +175,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 0 0 0 18px;
+  justify-content: center;
 }
 .ssm ul li img {
   width: 40px;
@@ -167,8 +201,8 @@ body {
 .ssm ul .bbt {
   display: flex !important;
   flex-direction: row;
-  align-content: center;
-  justify-content: space-around;
+  align-content: flex-start;
+  justify-content: space-between;
   align-items: baseline;
   flex-wrap: wrap;
   width: 80px;
