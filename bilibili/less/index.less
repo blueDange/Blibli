@@ -142,6 +142,7 @@
     margin-left: 70px;
     padding: 2px 20px 0 3px;
     border-radius: 10px;
+    max-width: 400px;
    form {
     display: flex;
     justify-content: space-between;
@@ -176,6 +177,8 @@
     display: none;
     text-indent: 2rem;
     padding-bottom: 10px;
+    font-weight: bold;
+    
 }
    .ssa {
         display: none;
@@ -190,15 +193,23 @@
            
         }
         div {
-            line-height: 30px;
+            line-height: 40px;
             display: flex;
             justify-content: flex-start;
             align-items: center;
+            div {
+                font-size: 14px;
+            }
         }
     }
     .right {
         float: right;
-        line-height: 30px;
+        line-height: 40px;
+        div{
+            div{
+                font-size: 14px;
+            }
+        }
     }
    }
  
@@ -266,6 +277,7 @@
 }
 // 中间左边布局
 .scorll {
+    max-width: 1740px;
     width:100%;
         
     min-width:1271px;
@@ -279,7 +291,8 @@
 .three {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
+
     a{
         display: flex;
         flex-wrap: wrap;
@@ -309,7 +322,7 @@
         }
         
         img {
-            margin-top: 1px;
+            margin-top: 2px;
             width: 90%;
             height: 90%;
             border-radius: 50%;
@@ -317,37 +330,123 @@
             
         }
         div {
-            padding-top: 5px;
+            padding-top: 10px;
+            font-size: 14px;
         }
     }
 }
 // 中间内容布局
 .md {
-    margin-top: 10px;
+    margin-top: 5px;
     display: grid;
-    grid-template-columns: repeat(11,60px);
+    
+    grid-template-columns: repeat(11,82px);
+  
     text-align: center;
     align-items: baseline;
-    justify-content: space-between;
-            /* 声明行间距和列间距 */
-            grid-gap: 20px;
-            /* 分别表示两行的高度 */
-            grid-template-rows: 30px;
+    justify-content: flex-start;
+    grid-gap: 10px;
+    grid-column-gap: 10px;
+    //   padding: 0 30px 0 0;;
             a {
-                width: 70px;
-                height: 35px;
+                width: 85px;
+                height: 28px;
                 display: block;
                 background-color: #F6F7F8;
                 text-decoration: none;
                 color: #000;
                 letter-spacing: 4px;
-                line-height: 35px;
+                line-height: 28px;
                 border-radius: 5px;
+                font-size: 14px;
             }
         }
-.lok {
+// 当尺寸小于1400中间部分宽度变小
+@media (min-width: 1430px) and(max-width: 1488px) {
+    .md{
+        grid-template-columns: repeat(11, 78px);
+
+        a{
+            width: 80px;
+        }
+    }
+}
+@media (min-width: 1000px) and(max-width: 1430px) {
+    .md{
+        grid-template-columns: repeat(11, 74px);
+
+        a{
+            width: 70px;
+        }
+    }
+}
+@media (min-width: 300px) and(max-width: 1345px) {
+    .md{
+        overflow: hidden;
+        grid-template-columns: repeat(9, 84px);
+        padding-right: 3px;
+
+        a{
+            width: 90px;
+        }
+        .no {
+            display: none;
+        }
+
+    }
+    .three{
+       a {
+            &:nth-child(1) {
+                width: 45px;
+                height: 45px;
+            }
+            &:nth-child(2) {
+                width: 45px;
+                height: 45px;
+            }
+            &:nth-child(3) {
+                width: 45px;
+                height: 45px;
+            }
+           
+        }
+        
+    }
+}
+@media screen and (max-width: 1324px) {
+    .lok{
+        a{
+            padding-right: 10px;
+            i{
+                display: none;
+                
+            }
+            span {
+                letter-spacing: 2px;
+            }
+        }
+    }
+    .md{
+        grid-template-columns: repeat(9, 84px);
+        padding-right: 3px;
+
+        a{
+            width: 85px;
+            font-weight: 400;
+            letter-spacing: 0;
+        }
+
+    }
+}
+     .lok {
     display: flex;
     flex-wrap: wrap;
-    align-content: space-around;
+    align-content: space-between;
     justify-content: space-between;
+    padding-left: 30px;
+    a {
+        text-decoration: none;
+        color: #61666D;
+        font-size: 15px;
+    }
 }
