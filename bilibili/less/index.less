@@ -25,7 +25,7 @@
         // height:100%;
         
         // background-color:#F0F0F0;
-        overflow: auto;
+        // overflow: auto;
   }
 .ff {
     display: flex;
@@ -42,7 +42,7 @@
     ul{
     // background-color: rebeccapurple;
     padding-left: 0 !important;
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     list-style: none;
     
@@ -62,9 +62,6 @@
             color: #fff;
         }
     }
-    a:last-child{
-        padding-right: 0;
-    }
     .u1 {
         padding: 6px 15px;
         a {
@@ -73,7 +70,9 @@
     }
     li a {
         text-decoration: none;
-        font-size: 13px;
+        font-weight: 500;
+            letter-spacing: 2px;
+        font-size: 15px;
         color: #fff;
         &:hover {
             color: #fff;
@@ -86,9 +85,6 @@
         
         ul {
             margin-right: -80px;
-        }
-        li {
-          
         }
         .ssm {
             ul{padding-left: 10px;}
@@ -151,6 +147,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #DEE0E3;
+    border-radius: 10px;
     a {
         padding-right: 15px;
         text-decoration: none;
@@ -167,6 +164,7 @@
         border: none;
         background-color: #DEE0E3;
         margin-right: 20px;
+        
         &:hover {
             background-color: #fff;
         }
@@ -267,25 +265,60 @@
     }
 }
 // 中间左边布局
+.scorll {
+    width:100%;
+        
+    min-width:1271px;
+    
+    // max-width:100%;
+    
+    // height:100%;
+    
+    // background-color:#F0F0F0;
+}
 .three {
     display: flex;
-    justify-content: space-between;
-    div{
-        // &:nth-child(1) {
-        //     background-color: green;
-        //     width: 50px;
-        //     height: 150px;
-        // }
-        // &:nth-child(2) {
-        //     background-color: pink;
-        //     width: 50px;
-        //     height: 150px;
-        // }
-        // &:nth-child(3) {
-        //     background-color: goldenrod;
-        //     width: 50px;
-        //     height: 150px;
-        // }
+    justify-content: space-around;
+    align-items: center;
+    a{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-decoration: none;
+        color: #fff;
+        
+        &:nth-child(1) {
+            background-color: #FECF22;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        &:nth-child(2) {
+            background-color: #F07775;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+
+        }
+        &:nth-child(3) {
+            background-color: #59CA73;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+
+        }
+        
+        img {
+            margin-top: 1px;
+            width: 90%;
+            height: 90%;
+            border-radius: 50%;
+            background-repeat: repeat;
+            
+        }
+        div {
+            padding-top: 5px;
+        }
     }
 }
 // 中间内容布局

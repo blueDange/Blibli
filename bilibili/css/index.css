@@ -14,7 +14,6 @@ body {
   background-color: skyblue;
   width: 100%;
   min-width: 1271px;
-  overflow: auto;
 }
 .ff {
   display: flex;
@@ -28,7 +27,7 @@ body {
 }
 .ff ul {
   padding-left: 0 !important;
-  margin-top: 30px;
+  margin-top: 20px;
   display: flex;
   list-style: none;
 }
@@ -47,9 +46,6 @@ body {
 .ff ul li i {
   color: #fff;
 }
-.ff ul a:last-child {
-  padding-right: 0;
-}
 .ff ul .u1 {
   padding: 6px 15px;
 }
@@ -58,7 +54,9 @@ body {
 }
 .ff ul li a {
   text-decoration: none;
-  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 15px;
   color: #fff;
 }
 .ff ul li a:hover {
@@ -114,6 +112,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #DEE0E3;
+  border-radius: 10px;
 }
 .ss form a {
   padding-right: 15px;
@@ -219,9 +218,49 @@ body {
   border: none;
   line-height: 40px;
 }
+.scorll {
+  width: 100%;
+  min-width: 1271px;
+}
 .three {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+}
+.three a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+}
+.three a:nth-child(1) {
+  background-color: #FECF22;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.three a:nth-child(2) {
+  background-color: #F07775;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.three a:nth-child(3) {
+  background-color: #59CA73;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.three a img {
+  margin-top: 1px;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background-repeat: repeat;
+}
+.three a div {
+  padding-top: 5px;
 }
 .md {
   margin-top: 10px;
