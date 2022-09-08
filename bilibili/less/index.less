@@ -11,7 +11,7 @@
     height: 200px;
     background: url(../images/head.png) no-repeat;
   }
-  body {
+  body { 
     background-color: skyblue;
 
         // margin:0px;
@@ -101,6 +101,19 @@
         
     }
 }
+@media screen and(max-width: 1509px) {
+    .ss{
+        .ssa{
+            .right{
+                float: none !important;
+                text-indent: 1.5rem;
+            }
+            .left{
+                float: none !important;
+            }
+        }
+    }
+}
 // 左边li的padding修改
 @media screen and(max-width: 1406px) {
     .ff{
@@ -131,6 +144,7 @@
             width: 40px !important;
         }
     }
+    
 }
 .ss{
 
@@ -340,7 +354,7 @@
     margin-top: 5px;
     display: grid;
     
-    grid-template-columns: repeat(11,82px);
+    grid-template-columns: repeat(11,1fr);
   
     text-align: center;
     align-items: baseline;
@@ -362,7 +376,7 @@
             }
         }
 // 当尺寸小于1400中间部分宽度变小
-@media (min-width: 1430px) and(max-width: 1488px) {
+@media (min-width: 1430px) and(max-width: 1531px) {
     .md{
         grid-template-columns: repeat(11, 78px);
 
@@ -371,12 +385,29 @@
         }
     }
 }
-@media (min-width: 1000px) and(max-width: 1430px) {
+@media screen and (max-width: 1515px) { 
+    .lok{
+        a {
+            span {
+                letter-spacing: 0 !important;
+            }
+        }
+    }
+}
+@media (min-width: 700px) and(max-width: 1430px) {
     .md{
         grid-template-columns: repeat(11, 74px);
 
         a{
             width: 70px;
+        }
+    }
+    .lok {
+        a{
+            span {
+                font-size: 12px;
+                letter-spacing: 0;
+            }
         }
     }
 }
@@ -422,6 +453,7 @@
                 
             }
             span {
+                font-size: 15px;
                 letter-spacing: 2px;
             }
         }
@@ -438,7 +470,7 @@
 
     }
 }
-     .lok {
+.lok {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
@@ -448,5 +480,9 @@
         text-decoration: none;
         color: #61666D;
         font-size: 15px;
+        span {
+            letter-spacing: 4px;
+
+        }
     }
 }

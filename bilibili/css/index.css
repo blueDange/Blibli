@@ -78,6 +78,15 @@ body {
     padding-left: 10px !important;
   }
 }
+@media screen and (max-width: 1509px) {
+  .ss .ssa .right {
+    float: none !important;
+    text-indent: 1.5rem;
+  }
+  .ss .ssa .left {
+    float: none !important;
+  }
+}
 @media screen and (max-width: 1406px) {
   .ff ul li {
     padding: 0 25px 0 0 ;
@@ -275,7 +284,7 @@ body {
 .md {
   margin-top: 5px;
   display: grid;
-  grid-template-columns: repeat(11, 82px);
+  grid-template-columns: repeat(11, 1fr);
   text-align: center;
   align-items: baseline;
   justify-content: flex-start;
@@ -294,7 +303,7 @@ body {
   border-radius: 5px;
   font-size: 14px;
 }
-@media (min-width: 1430px) and (max-width: 1488px) {
+@media (min-width: 1430px) and (max-width: 1531px) {
   .md {
     grid-template-columns: repeat(11, 78px);
   }
@@ -302,12 +311,21 @@ body {
     width: 80px;
   }
 }
-@media (min-width: 1000px) and (max-width: 1430px) {
+@media screen and (max-width: 1515px) {
+  .lok a span {
+    letter-spacing: 0 !important;
+  }
+}
+@media (min-width: 700px) and (max-width: 1430px) {
   .md {
     grid-template-columns: repeat(11, 74px);
   }
   .md a {
     width: 70px;
+  }
+  .lok a span {
+    font-size: 12px;
+    letter-spacing: 0;
   }
 }
 @media (min-width: 300px) and (max-width: 1345px) {
@@ -343,6 +361,7 @@ body {
     display: none;
   }
   .lok a span {
+    font-size: 15px;
     letter-spacing: 2px;
   }
   .md {
@@ -366,4 +385,7 @@ body {
   text-decoration: none;
   color: #61666D;
   font-size: 15px;
+}
+.lok a span {
+  letter-spacing: 4px;
 }
