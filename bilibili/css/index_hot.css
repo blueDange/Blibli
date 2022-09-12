@@ -1,0 +1,112 @@
+.a_contain {
+  max-width: 1286px;
+  margin: 0 auto;
+  min-width: 107px;
+}
+.a_contain .nav_table ul {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #e7e7e7;
+  padding-left: 0;
+}
+.a_contain .nav_table ul li {
+  list-style: none;
+  margin-right: 25px;
+  height: 84px;
+}
+.a_contain .nav_table ul li img {
+  width: 25%;
+}
+.a_contain .nav_table ul li span {
+  font-size: 18px;
+  padding-left: 5px;
+}
+.a_contain .weekly_header {
+  display: flex;
+}
+.a_contain .weekly_header span {
+  padding-right: 30px;
+}
+.a_contain .weekly_header div {
+  font-size: 14px;
+  color: #999999;
+}
+.a_contain .data {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.a_contain .data .item {
+  display: flex;
+  width: calc(50% - 5px);
+  margin-bottom: 40px;
+}
+.a_contain .data .item a {
+  display: block;
+  width: 206px;
+  margin-right: 10px;
+}
+.a_contain .data .item a img {
+  width: 100%;
+}
+.a_contain .data .item .item_a {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  color: #999;
+  font-size: 12px;
+  padding: 0 70px 0 0;
+}
+.a_contain .data .item .item_a .item_b span img {
+  width: 5%;
+}
+.a_contain .data .item .item_a .item_b .item_left {
+  margin-right: 5px;
+}
+.a_contain .data .item .item_a .item_b .item_left img {
+  width: 5%;
+}
+.a_contain .data .item .item_a .item_b .item_right img {
+  width: 5%;
+}
+.a_contain .data .item .item_a .item_b p {
+  display: flex;
+  margin-top: 8px;
+  background: #f9f9f9;
+  border-radius: 2px;
+  padding: 4px 8px;
+  font-size: 12px;
+  color: #999;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 16px 0 0;
+  margin: 0;
+}
+.a_contain .data .item .item_a .item_b p img {
+  width: 16px;
+  height: 16px;
+}
+.a_contain .callback {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #e7e7e7;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  position: fixed;
+  right: 30px;
+  bottom: 100px;
+  display: none;
+}
+.a_contain .callback img {
+  display: block;
+  width: 70%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

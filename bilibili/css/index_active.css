@@ -1,0 +1,228 @@
+.list {
+  max-width: 1160px !important;
+  width: 100%;
+  margin: 0 auto;
+}
+.flag {
+  padding-top: 80px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e9ef;
+}
+.flag img {
+  display: inline-block;
+  width: 3%;
+  vertical-align: middle;
+  margin-right: 16px;
+}
+.flag span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 18px;
+  line-height: 14px;
+  color: #222;
+}
+.act_list ul {
+  margin-top: 20px;
+}
+.act_list ul li {
+  background: #fff;
+  border-bottom: 1px solid #e5e9ef;
+  padding: 0 0 20px;
+  margin: 20px 0 0;
+  overflow: hidden;
+}
+.act_list ul li img {
+  float: left;
+  margin-right: 12px;
+  width: 260px;
+  height: 150px;
+  border-radius: 4px;
+}
+.act_list ul li h2 {
+  padding-bottom: 16px;
+  overflow: hidden;
+  line-height: 20px;
+  height: 40px;
+}
+.act_list ul li h2 a {
+  text-decoration: none;
+  color: #222;
+}
+.act_list ul li .status_ing {
+  overflow: hidden;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #6d757a;
+}
+.act_list ul li .status_ing span {
+  color: #00A1DE;
+}
+.act_list ul li .act_info {
+  color: #6d757a;
+  line-height: 20px;
+  margin-bottom: 14px;
+  overflow: hidden;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.act_list .pagelist .flip-left ul span {
+  display: block;
+  background-color: #fff;
+  min-width: 15px;
+  margin: 0 2px 0 2px;
+  padding: 0 10px;
+  height: 38px;
+  line-height: 38px;
+  cursor: pointer;
+  text-align: center;
+  float: left;
+  transition: all 0.2s;
+}
+.act_list .pagelist .flip-left ul .flip-left-first {
+  background-color: #00A1D6;
+}
+.act_list .pagelist .flip-left ul li {
+  display: block;
+  float: left;
+  background-color: #fff;
+  min-width: 15px;
+  margin: 0 2px 0 2px;
+  padding: 0 10px;
+  height: 38px;
+  line-height: 38px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  text-align: center;
+  transition: all 0.4s;
+}
+.act_list .pagelist .flip-left ul li:hover {
+  background-color: #00A1D6;
+}
+footer {
+  max-width: 1630px;
+  min-width: 999px;
+  margin: 0 auto;
+  background-color: #F6F9FA;
+  margin-top: 80px;
+  font-size: 14px;
+}
+footer .fot {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  min-width: 999px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+footer .fot .foot-left {
+  display: flex;
+  flex: 4;
+  justify-content: space-between;
+}
+footer .fot .foot-left .left-a {
+  padding-right: 90px;
+  margin-right: 40px;
+  border-right: 1px solid #eee;
+}
+footer .fot .foot-left .left-a span {
+  font-size: 16px;
+  display: block;
+  margin: 20px 0;
+  color: #999999;
+}
+footer .fot .foot-left .left-a ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px 100px;
+}
+footer .fot .foot-left .left-a ul li {
+  list-style: none;
+}
+footer .fot .foot-left .left-b {
+  padding-right: 120px;
+  margin-right: 40px;
+  border-right: 1px solid #eee;
+}
+footer .fot .foot-left .left-b span {
+  font-size: 16px;
+  display: block;
+  margin: 20px 0;
+  color: #999999;
+}
+footer .fot .foot-left .left-b ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px 100px;
+}
+footer .fot .foot-left .left-b ul li {
+  list-style: none;
+}
+footer .fot .foot-right {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+footer .fot .foot-right .right-link {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 0;
+  border-right: none;
+  margin-right: 0;
+  align-items: center;
+}
+footer .fot .foot-right .right-link div a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 70px;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #6d757a;
+}
+footer .fot .foot-right .right-link div a .ying {
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  border-radius: 50%;
+}
+footer .fot .foot-right .right-link div a .ying3 {
+  width: 50px;
+  height: 50px;
+  background-color: #FE596C;
+  border-radius: 50%;
+}
+footer .fot .foot-right .right-link div a .ying4 {
+  width: 50px;
+  height: 50px;
+  background-color: #27E35F;
+  border-radius: 50%;
+}
+footer .fot .foot-right .right-link div a img {
+  width: 70%;
+  display: block;
+  margin-top: 4px;
+  margin-left: 8px;
+}
+footer .fot_1 {
+  max-width: 1200px;
+  min-width: 999px;
+  margin: 0 auto;
+  display: flex;
+  padding-bottom: 30px;
+}
+footer .fot_1 .fot_1_a img {
+  display: block;
+  margin-right: 20px;
+}
+footer .fot_1 .fot_1_a img:nth-child(2) {
+  width: 90%;
+}
+footer .fot_1 .fot_1_b p {
+  letter-spacing: 2px;
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+  color: #999999;
+}
