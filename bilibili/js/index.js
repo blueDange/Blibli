@@ -16,6 +16,7 @@ window.addEventListener('load', function() {
         ss.style.backgroundColor = '#fff';
         hot_search.style.display = 'block';
         ssa.style.display = 'block';
+        ss.style.marginTop = '200px';
     })
    // 轮播图
     var focus = document.querySelector('.focus');
