@@ -1,0 +1,123 @@
+.focus {
+  position: relative;
+  min-height: 396px;
+}
+.focus .focus-big a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+.focus .focus-big img {
+  width: 100%;
+  height: 100%;
+}
+.focus .focus-big .title {
+  position: absolute;
+  bottom: 3px;
+  left: 5%;
+}
+.focus .focus-small {
+  position: absolute;
+  left: 65%;
+  bottom: 10px;
+}
+.focus .focus-small img {
+  width: 64px;
+  height: 48px;
+  display: inline-block;
+  margin-right: 8px;
+  border: 2px solid #fff;
+}
+.main {
+  width: 1286px;
+  margin: 8px auto 0;
+}
+.main .music-menu {
+  height: 39px;
+}
+.main .music-menu .left {
+  float: left;
+  border-bottom: 1px solid #e7e7e7;
+  width: calc(100% - 216px);
+}
+.main .music-menu .left a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  margin-right: 30px;
+  line-height: 36px;
+}
+.main .music-menu .left .left-first {
+  color: #00a1d6;
+  border-bottom: 2px solid #00a1d6;
+}
+.main .music-menu .right-search {
+  float: right;
+  width: 206px;
+}
+.main .music-menu .right-search input {
+  line-height: 36px;
+  padding: 18px;
+  border-radius: 18px;
+  border: 1px solid #ccc;
+  height: 36px;
+}
+.main .music-menu .right-search button {
+  border: none;
+  position: relative;
+}
+.main .music-menu .right-search button i {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+}
+.main .home {
+  margin-top: 30px;
+}
+.main .home .title {
+  height: 28px;
+}
+.main .home .title .left {
+  float: left;
+}
+.main .home .title .right {
+  float: right;
+  width: 60px;
+  height: 24px;
+}
+.main .home .title .right a {
+  display: flex;
+  padding-left: 12px;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+  color: #605c5c;
+  font-size: 12px;
+  width: 60px;
+  height: 24px;
+  border: 1px solid silver;
+}
+.main .home .img-big {
+  float: left;
+  width: 422px;
+  height: 242px;
+}
+.main .home .img-big img {
+  width: 100%;
+  height: 100%;
+}
+.main .home .img-small {
+  float: right;
+  width: 864px;
+}
+.main .home .img-small .small-list {
+  width: 206px;
+  height: 116px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.main .home .img-small .small-list img {
+  width: 100%;
+  height: 100%;
+}

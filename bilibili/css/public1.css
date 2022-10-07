@@ -11,7 +11,7 @@ body {
   overflow: auto;
 }
 .hd {
-  position: fixed;
+  position: relative;
   background-color: #fff;
   min-width: 1271px;
   top: 0;
