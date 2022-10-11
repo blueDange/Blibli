@@ -14,6 +14,10 @@
 .clearfix {
   *zoom: 1;
 }
+html {
+  font-size: 16px;
+  color: #333;
+}
 body {
   min-width: 1271px;
   width: 100%;
@@ -86,7 +90,7 @@ body {
   position: relative;
   margin: 0 auto;
   min-width: 181px;
-  max-width: 400px;
+  max-width: 500px;
 }
 .ss form {
   display: flex;
@@ -253,6 +257,10 @@ body {
   .ff .ssm ul {
     padding-left: 10px;
   }
+  .ss {
+    max-width: 400px;
+    min-width: none;
+  }
 }
 @media screen and (max-width: 1605px) {
   .ssm li {
@@ -291,5 +299,7 @@ body {
   }
   .ss {
     padding-right: 35px;
+    max-width: 380px;
+    min-width: none;
   }
 }
