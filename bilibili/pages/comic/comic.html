@@ -1,0 +1,407 @@
+<!--
+ * @Author: blueDange 672074694@qq.com
+ * @Date: 2022-09-12 17:24:01
+ * @LastEditors: blueDange 672074694@qq.com
+ * @LastEditTime: 2022-09-12 22:03:21
+ * @FilePath: \Blibili\Blibli\bilibili\comic.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comic</title>
+    <link rel="stylesheet" href="./comic.css" />
+    <link rel="stylesheet" href="../../assets/css/public-footer.css" />
+
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../assets/js/common.js"></script>
+    <style>
+      #container {
+        width: 300px;
+        height: 300px;
+        background-color: skyblue;
+        margin-left: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div class="nav-bar">
+        <div class="nav-header">
+          <div class="nav-header-logo"></div>
+          <div class="nav-header-logo-sub">商城</div>
+          <div class="nav-header-tv-logo"></div>
+          <div class="nav-header-mainsite">主站</div>
+          <div class="nav-header-input">
+            <input type="text" placeholder="活动,嘉宾,场馆" />
+            <div class="nav-header-input-search"></div>
+          </div>
+          <div class="user-info"></div>
+          <div class="nav-header-order">
+            <div class="nav-header-order-info"></div>
+            <div class="nav-header-order-center">订单中心</div>
+          </div>
+        </div>
+      </div>
+      <div class="showhome">
+        <div class="showhome-left box-shadow">
+          <a href="?page=comic">漫展演出</a>
+        </div>
+        <div class="showhome-right">
+          <a href="?page=comic2">B站周边</a>
+        </div>
+      </div>
+      <script>
+        const params = new URLSearchParams(location.search)
+        const page = params.get('page') || 'comic'
+        console.log('page',page);
+
+        $('#container').load('./comic2.html')
+      </script>
+      <div class="selector">
+        <div class="selector-one">
+          <div class="one-title">城市:</div>
+          <div class="one-title-selector">
+            <ul class="city-list">
+              <li class="first city-item">全国</li>
+              <li class="city-item">北京</li>
+              <li class="city-item">上海</li>
+              <li class="city-item">南京</li>
+              <li class="city-item">西安</li>
+              <li class="city-item">北京</li>
+              <li class="city-item">上海</li>
+              <li class="city-item">南京</li>
+              <li class="last city-item">更多城市</li>
+            </ul>
+          </div>
+        </div>
+        <div class="selector-two">
+          <div class="selector-one">
+            <div class="one-title">类型:</div>
+            <div class="one-title-selector">
+              <ul class="city-list">
+                <li class="first city-item">全部类型</li>
+                <li class="city-item">北京</li>
+                <li class="city-item">伤害</li>
+                <li class="city-item">南京</li>
+                <li class="city-item">西安</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="selector-three">
+          <div class="selector-one">
+            <div class="one-title">筛选:</div>
+            <div class="one-title-selector">
+              <ul class="city-list">
+                <li class="first city-item">全部时间</li>
+                <li class="city-item">北京</li>
+                <li class="city-item">伤害</li>
+                <li class="city-item">南京</li>
+                <li class="city-item">西安</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="big-contain">
+        <div class="contain clearfix">
+          <div class="contain-list-item">
+            <div class="contain-list-item-img"></div>
+            <div class="contain-list-item-detail">
+              <div class="contain-item-title">
+                成都·第十届世界线动漫展睡次元,绘制缤纷世界"
+              </div>
+              <div class="contain-item-time">
+                <div class="contain-item-time-icon"></div>
+                <span>2022.10.01 - 10.04</span>
+              </div>
+              <div class="contain-item-adress">
+                <div class="contain-item-adress-icon"></div>
+                <span>成都市 中国西部国际博览城</span>
+              </div>
+              <div class="contain-item-price">
+                <span class="contain-item-price-one">¥</span>
+                <span class="contain-item-price-two">63</span>
+                <span class="contain-item-price-three">起</span>
+                <span class="contain-item-price-four">拼团</span>
+                <span class="contain-item-price-five">9.7折</span>
+              </div>
+            </div>
+          </div>
+          <div class="contain-list-item">
+            <div class="contain-list-item-img"></div>
+            <div class="contain-list-item-detail">
+              <div class="contain-item-title">
+                成都·第十届世界线动漫展睡次元,绘制缤纷世界"
+              </div>
+              <div class="contain-item-time">
+                <div class="contain-item-time-icon"></div>
+                <span>2022.10.01 - 10.04</span>
+              </div>
+              <div class="contain-item-adress">
+                <div class="contain-item-adress-icon"></div>
+                <span>成都市 中国西部国际博览城</span>
+              </div>
+              <div class="contain-item-price">
+                <span class="contain-item-price-one">¥</span>
+                <span class="contain-item-price-two">63</span>
+                <span class="contain-item-price-three">起</span>
+                <span class="contain-item-price-four">拼团</span>
+                <span class="contain-item-price-five">9.7折</span>
+              </div>
+            </div>
+          </div>
+          <div class="contain-list-item">
+            <div class="contain-list-item-img"></div>
+            <div class="contain-list-item-detail">
+              <div class="contain-item-title">
+                成都·第十届世界线动漫展睡次元,绘制缤纷世界"
+              </div>
+              <div class="contain-item-time">
+                <div class="contain-item-time-icon"></div>
+                <span>2022.10.01 - 10.04</span>
+              </div>
+              <div class="contain-item-adress">
+                <div class="contain-item-adress-icon"></div>
+                <span>成都市 中国西部国际博览城</span>
+              </div>
+              <div class="contain-item-price">
+                <span class="contain-item-price-one">¥</span>
+                <span class="contain-item-price-two">63</span>
+                <span class="contain-item-price-three">起</span>
+                <span class="contain-item-price-four">拼团</span>
+                <span class="contain-item-price-five">9.7折</span>
+              </div>
+            </div>
+          </div>
+          <div class="contain-list-item">
+            <div class="contain-list-item-img"></div>
+            <div class="contain-list-item-detail">
+              <div class="contain-item-title">
+                成都·第十届世界线动漫展睡次元,绘制缤纷世界"
+              </div>
+              <div class="contain-item-time">
+                <div class="contain-item-time-icon"></div>
+                <span>2022.10.01 - 10.04</span>
+              </div>
+              <div class="contain-item-adress">
+                <div class="contain-item-adress-icon"></div>
+                <span>成都市 中国西部国际博览城</span>
+              </div>
+              <div class="contain-item-price">
+                <span class="contain-item-price-one">¥</span>
+                <span class="contain-item-price-two">63</span>
+                <span class="contain-item-price-three">起</span>
+                <span class="contain-item-price-four">拼团</span>
+                <span class="contain-item-price-five">9.7折</span>
+              </div>
+            </div>
+          </div>
+          <div class="contain-list-item">
+            <div class="contain-list-item-img"></div>
+            <div class="contain-list-item-detail">
+              <div class="contain-item-title">
+                成都·第十届世界线动漫展睡次元,绘制缤纷世界"
+              </div>
+              <div class="contain-item-time">
+                <div class="contain-item-time-icon"></div>
+                <span>2022.10.01 - 10.04</span>
+              </div>
+              <div class="contain-item-adress">
+                <div class="contain-item-adress-icon"></div>
+                <span>成都市 中国西部国际博览城</span>
+              </div>
+              <div class="contain-item-price">
+                <span class="contain-item-price-one">¥</span>
+                <span class="contain-item-price-two">63</span>
+                <span class="contain-item-price-three">起</span>
+                <span class="contain-item-price-four">拼团</span>
+                <span class="contain-item-price-five">9.7折</span>
+              </div>
+            </div>
+          </div>
+          <div class="contain-list-item">
+            <div class="contain-list-item-img"></div>
+            <div class="contain-list-item-detail">
+              <div class="contain-item-title">
+                成都·第十届世界线动漫展睡次元,绘制缤纷世界"
+              </div>
+              <div class="contain-item-time">
+                <div class="contain-item-time-icon"></div>
+                <span>2022.10.01 - 10.04</span>
+              </div>
+              <div class="contain-item-adress">
+                <div class="contain-item-adress-icon"></div>
+                <span>成都市 中国西部国际博览城</span>
+              </div>
+              <div class="contain-item-price">
+                <span class="contain-item-price-one">¥</span>
+                <span class="contain-item-price-two">63</span>
+                <span class="contain-item-price-three">起</span>
+                <span class="contain-item-price-four">拼团</span>
+                <span class="contain-item-price-five">9.7折</span>
+              </div>
+            </div>
+          </div>
+          <div class="contain-list-item">
+            <div class="contain-list-item-img"></div>
+            <div class="contain-list-item-detail">
+              <div class="contain-item-title">
+                成都·第十届世界线动漫展睡次元,绘制缤纷世界"
+              </div>
+              <div class="contain-item-time">
+                <div class="contain-item-time-icon"></div>
+                <span>2022.10.01 - 10.04</span>
+              </div>
+              <div class="contain-item-adress">
+                <div class="contain-item-adress-icon"></div>
+                <span>成都市 中国西部国际博览城</span>
+              </div>
+              <div class="contain-item-price">
+                <span class="contain-item-price-one">¥</span>
+                <span class="contain-item-price-two">63</span>
+                <span class="contain-item-price-three">起</span>
+                <span class="contain-item-price-four">拼团</span>
+                <span class="contain-item-price-five">9.7折</span>
+              </div>
+            </div>
+          </div>
+          <div class="contain-list-item">
+            <div class="contain-list-item-img"></div>
+            <div class="contain-list-item-detail">
+              <div class="contain-item-title">
+                成都·第十届世界线动漫展睡次元,绘制缤纷世界"
+              </div>
+              <div class="contain-item-time">
+                <div class="contain-item-time-icon"></div>
+                <span>2022.10.01 - 10.04</span>
+              </div>
+              <div class="contain-item-adress">
+                <div class="contain-item-adress-icon"></div>
+                <span>成都市 中国西部国际博览城</span>
+              </div>
+              <div class="contain-item-price">
+                <span class="contain-item-price-one">¥</span>
+                <span class="contain-item-price-two">63</span>
+                <span class="contain-item-price-three">起</span>
+                <span class="contain-item-price-four">拼团</span>
+                <span class="contain-item-price-five">9.7折</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <div class="pagination-left"></div>
+          <div class="pagination-page">
+            <span class="page-num">1</span>
+            <span class="page-num">2</span>
+            <span class="page-num">3</span>
+            <span class="page-num">4</span>
+            <span class="page-num">...</span>
+            <span class="page-num">40</span>
+          </div>
+          <div class="pagination-right"></div>
+        </div>
+        <div class="fot">
+          <div class="foot-left">
+            <div class="left-a">
+              <span>blibili</span>
+              <ul>
+                <li>关于我们</li>
+                <li>关于我们</li>
+                <li>关于我们</li>
+                <li>关于我们</li>
+                <li>关于我们</li>
+                <li>关于我们</li>
+                <li>关于我们</li>
+                <li>关于我们</li>
+              </ul>
+            </div>
+            <div class="left-b">
+              <span>传送门</span>
+              <ul>
+                <li>活动中心</li>
+                <li>活动中心</li>
+                <li>活动中心</li>
+                <li>活动中心</li>
+                <li>活动中心</li>
+                <li>活动中心</li>
+                <li>活动中心</li>
+                <li>活动中心</li>
+                <li>活动中心</li>
+                <li>活动中心</li>
+                <li>活动中心</li>
+                <li>活动中心</li>
+              </ul>
+            </div>
+          </div>
+          <div class="foot-right">
+            <div class="right-link">
+              <div>
+                <a href="javascript:;">
+                  <div class="ying">
+                    <img src="../../assets/icon/in1.svg" alt="" />
+                  </div>
+                  <span>下载APP</span>
+                </a>
+              </div>
+              <div>
+                <a href="javascript:;">
+                  <img src="../../assets/icon/in2.png" alt="" />
+                  <span>公益</span>
+                </a>
+              </div>
+              <div>
+                <a href="javascript:;">
+                  <div class="ying3">
+                    <img src="../../assets/icon/in3.svg" alt="" />
+                  </div>
+                  <span>新浪微博</span>
+                </a>
+              </div>
+              <div>
+                <a href="javascript:;">
+                  <div class="ying4">
+                    <img src="../../assets/icon/in4.svg" alt="" />
+                  </div>
+                  <span>官方微信</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 最底下 -->
+        <!-- <div class="fot_1">
+          <div class="fot_1_a">
+            <img src="../../assets/images/partner.png" alt="" />
+            <img src="../../assets/images/pic962110.png" alt="" />
+          </div>
+          <div class="fot_1_b">
+            <p>
+              营业执照 信息网络传播视听节目许可证：0910417 网络文化经营许可证
+              沪网文【2019】3804-274号
+              广播电视节目制作经营许可证：（沪）字第01248号
+              增值电信业务经营许可证 沪B2-20100043
+              互联网ICP备案：沪ICP备13002172号-3 出版物经营许可证 沪批字第U6699
+              号 互联网药品信息服务资格证 沪-非经营性-2016-0143 营业性演出许可证
+              沪市文演（经）00-2253 不良信息举报邮箱：help@bilibili.com |
+              涉未成年举报邮箱：teenprotect@bilibili.com |
+              不良信息举报电话：4006262233转1 上海互联网举报中心 |
+              12345政务服务便民热线 | 沪公网安备31011002002436号 |
+              儿童色情信息举报专区 | 扫黄打非举报
+              网上有害信息举报专区：中国互联网违法和不良信息举报中心
+              亲爱的市民朋友，上海警方反诈劝阻电话“96110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听。
+              公司名称：上海宽娱数码科技有限公司|公司地址：上海市杨浦区政立路485号|电话：021-25099888
+            </p>
+          </div>
+        </div>
+      </div> -->
+      <div id="boxa"></div>
+    </div>
+    <div id="container"></div>
+  </body>
+</html>

@@ -126,7 +126,6 @@
   width: 126px;
   height: 56px;
   text-align: center;
-  box-shadow: 3px 7px 20px 1px rgba(0, 0, 0, 0.2);
 }
 .showhome .showhome-left a {
   text-decoration: none;
@@ -255,7 +254,7 @@
   margin-top: 10px;
 }
 .contain .contain-list-item .contain-list-item-detail .contain-item-adress .contain-item-adress-icon {
-  background-image: url(../images/app-content-address-icon.png);
+  background-image: url(..assets/images/app-content-address-icon.png);
   width: 12px;
   height: 13px;
   margin-right: 8px;
@@ -316,7 +315,7 @@
   margin-bottom: 55px;
 }
 .pagination .pagination-left {
-  background-image: url(../images/pagination-left.png);
+  background-image: url(../assets/images/pagination-left.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 17px;

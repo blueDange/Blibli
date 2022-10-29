@@ -49,6 +49,7 @@
 .header .three a div {
   padding-top: 10px;
   font-size: 14px;
+  color: black;
 }
 .header .md {
   display: flex;
@@ -231,4 +232,86 @@
 .feed .feed1 .feed2 .feed2-body .feed2-body-big .feed2-body-small .feed2-body-small-floor img {
   width: 16px;
   height: 16px;
+  vertical-align: middle;
+}
+.feed .container .area-header {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.feed .container .area-header > div {
+  display: flex;
+  align-items: center;
+}
+.feed .container .area-header > div > div {
+  background-color: #F6F7F8;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+  overflow: hidden;
+  height: 30px;
+}
+.feed .container .area-header > div > div > button {
+  outline: none;
+  border: none;
+  font-size: 16px;
+  font-weight: normal;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  width: 100%;
+}
+.feed .container .area-header > div > #btn > button:not(:first-child) {
+  letter-spacing: 3px;
+}
+.feed .container .area-header > div > #btn >.blue {
+  background-color: skyblue;
+}
+.feed .container .area-header > div > img {
+  width: 30px;
+  height: 30px;
+  vertical-align: bottom;
+}
+.feed .container .area-header > div:first-child > a {
+  text-decoration: none;
+  color: #333;
+  padding: 0;
+  margin: 0;
+  font-size: 23px;
+  padding-left: 4px;
+  padding-right: 9px;
+}
+.feed .container .area-header > div:last-child > a {
+  text-decoration: none;
+  color: #18191C;
+  padding: 0;
+  margin: 0;
+  padding: 8px 12px;
+  border: 1px solid rgb(165, 161, 161);
+  border-radius: 5px;
+  font-weight: 545;
+  font-size: 13px;
+}
+.feed .container .container-data {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.feed .container .container-data > .data-item {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-gap: 0 15px;
+}
+.feed .container .container-data > .data-item > div > a > img {
+  width: 100%;
+}
+.feed .container .container-data > .data-item > div {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.feed .container .container-data > .data-item > div > span:last-child {
+  font-size: 13px;
+  color: #949BA3;
 }

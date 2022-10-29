@@ -61,6 +61,7 @@
   border-radius: 18px;
   border: 1px solid #ccc;
   height: 36px;
+  outline: none;
 }
 .main .music-menu .right-search button {
   border: none;
@@ -68,8 +69,8 @@
 }
 .main .music-menu .right-search button i {
   position: absolute;
-  top: -43px;
-  right: -190px;
+  top: -10px;
+  right: 20px;
 }
 .main .home {
   margin-top: 30px;
