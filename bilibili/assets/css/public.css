@@ -114,7 +114,7 @@ body {
   margin-right: 20px;
 }
 .ss form input:hover {
-  background-color: #fff;
+  background-color: #d5d9e0;
 }
 .ss .hot_search {
   display: none;
@@ -147,6 +147,12 @@ body {
 .ss .ssa .right {
   float: right;
   line-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: 8px;
+  
+
 }
 .ss .ssa .right div div {
   font-size: 14px;
@@ -185,7 +191,7 @@ body {
   color: #fff;
 }
 .ssm ul li a:hover {
-  color: #fff;
+  color: #d0d4db;
 }
 .ssm ul li a :nth-last-child(a) {
   line-height: 40px;

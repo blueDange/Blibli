@@ -1,342 +1,126 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-.clearfix:before,
-.clearfix:after {
-  content: "";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}
-.clearfix {
-  *zoom: 1;
-}
-.nav-bar {
-  background: #fff;
-  height: 60px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-}
-.nav-bar .nav-header {
-  width: 1160px;
-  margin: 0 auto;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-.nav-bar .nav-header .nav-header-logo {
-  background: url(../images/comic-vip-buy.png) no-repeat;
-  width: 91px;
-  height: 20px;
-  background-size: 100% 100%;
-  flex-shrink: 0;
-}
-.nav-bar .nav-header .nav-header-logo-sub {
-  padding-left: 3px;
-  font-size: 14px;
-}
-.nav-bar .nav-header .nav-header-tv-logo {
-  background-image: url(../images/comic-watch.png);
-  background-repeat: no-repeat;
-  cursor: pointer;
-  margin-right: 6px;
-  margin-left: 40px;
-  flex-shrink: 0;
-  width: 18px;
-  height: 18px;
-  background-size: 100% 100%;
-}
-.nav-bar .nav-header .nav-header-mainsite {
-  font-size: 14px;
-  color: #636c7b;
-  line-height: 14px;
-  width: 90px;
-}
-.nav-bar .nav-header .nav-header-input {
-  flex: 1 1;
+.focus {
   position: relative;
+  min-height: 396px;
 }
-.nav-bar .nav-header .nav-header-input input {
-  cursor: auto;
-  font-size: 12px;
-  color: #6d757a;
-  margin-left: 319px;
-  width: 360px;
-  height: 40px;
-  border: none;
-  padding-left: 20px;
-  background: #f1f3f5;
-  border-radius: 40px;
+.focus .focus-big a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+.focus .focus-big img {
+  width: 100%;
+  height: 100%;
+}
+.focus .focus-big .title {
+  position: absolute;
+  bottom: 3px;
+  left: 5%;
+}
+.focus .focus-small {
+  position: absolute;
+  left: 65%;
+  bottom: 10px;
+}
+.focus .focus-small img {
+  width: 64px;
+  height: 48px;
+  display: inline-block;
+  margin-right: 8px;
+  border: 2px solid #fff;
+}
+
+.main {
+  width: 1286px;
+  margin: 8px auto 0;
+}
+.main .music-menu {
+  height: 39px;
+}
+.main .music-menu .left {
+  float: left;
+  border-bottom: 1px solid #e7e7e7;
+  width: calc(100% - 216px);
+}
+.main .music-menu .left a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  margin-right: 30px;
+  line-height: 36px;
+}
+.main .music-menu .left .left-first {
+  color: #00a1d6;
+  border-bottom: 2px solid #00a1d6;
+}
+.main .music-menu .right-search {
+  float: right;
+  width: 206px;
+}
+.main .music-menu .right-search input {
+  line-height: 36px;
+  padding: 18px;
+  border-radius: 18px;
+  border: 1px solid #ccc;
+  height: 36px;
   outline: none;
 }
-.nav-bar .nav-header .nav-header-input .nav-header-input-search {
-  position: absolute;
-  right: 28px;
-  bottom: 10px;
-  background-image: url(../images/comic-big-J.png);
-  background-repeat: no-repeat;
-  width: 18px;
-  height: 18px;
-  background-size: 100% 100%;
-}
-.nav-bar .nav-header .user-info {
-  background-image: url(../images/touxiang.jpg);
-  z-index: 9;
-  transition: all 0.3s;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  margin-left: 40px;
-  margin-right: 10px;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-}
-.nav-bar .nav-header .nav-header-order {
-  display: flex;
-  align-items: center;
-  margin-left: 25px;
-}
-.nav-bar .nav-header .nav-header-order .nav-header-order-info {
-  background-image: url(../images/comic-D.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  width: 18px;
-  height: 18px;
-  flex-shrink: 0;
-}
-.nav-bar .nav-header .nav-header-order .nav-header-order-center {
-  z-index: 100;
-  font-size: 14px;
-  color: #636c7b;
-  line-height: 14px;
-  width: 60px;
-}
-.showhome {
-  background-image: url(../images/comic-bg.png);
-  background-size: 100% 100%;
-  width: 239px;
-  height: 56px;
-  margin: 0 auto;
-  margin-top: 16px;
-}
-.showhome .showhome-left {
-  float: left;
-  width: 126px;
-  height: 56px;
-  text-align: center;
-}
-.showhome .showhome-left a {
-  text-decoration: none;
-  font-size: 20px;
-  color: #000;
-  line-height: 56px;
-  font-weight: 700;
-}
-.showhome .box-shadow {
-  box-shadow: 3px 7px 20px 1px rgba(0, 0, 0, 0.2);
-}
-.showhome .showhome-right {
-  float: left;
-  width: 113px;
-  height: 56px;
-  text-align: center;
-}
-.showhome .showhome-right a {
-  text-decoration: none;
-  font-size: 20px;
-  color: #BCBCBC;
-  line-height: 56px;
-}
-.selector {
-  width: 100%;
-  height: 120px;
-  background-color: #fff;
-  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
-}
-.selector .selector-one {
-  display: flex;
-  width: 1160px;
-  height: 40px;
-  line-height: 40px;
-  margin: 0 auto;
-  border-bottom: 1px dashed #e5e9ef;
-}
-.selector .selector-one .one-title {
-  width: 90px;
-  font-size: 12px;
-  color: #99a2aa;
-}
-.selector .selector-one .one-title-selector .city-list {
-  list-style: none;
-  display: flex;
-}
-.selector .selector-one .one-title-selector .city-list .city-item {
-  width: 90px;
-  font-size: 12px;
-  color: #6D757A;
-  cursor: pointer;
-}
-.selector .selector-one .one-title-selector .city-list .first {
-  color: #F25D8E;
-  width: 140px;
-}
-.selector .selector-one .one-title-selector .city-list .last {
-  flex: 1 1;
-  text-align: right;
-}
-.big-contain {
-  background-color: #F4F5F7;
-}
-.contain {
-  width: 1160px;
-  margin: 0 auto;
-  display: block;
-}
-.contain .contain-list-item {
+.main .music-menu .right-search button {
+  border: none;
   position: relative;
-  display: flex;
-  margin-top: 60px;
-  margin-right: 40px;
-  width: 560px;
-  height: 237px;
-  background: #fff;
-  box-shadow: 0 0 15px 0 hsla(203, 6%, 45%, 0.09);
-  border-radius: 8px;
+}
+.main .music-menu .right-search button i {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+}
+.main .home {
+  margin-top: 30px;
+}
+.main .home .title {
+  height: 28px;
+}
+.main .home .title .left {
   float: left;
 }
-.contain .contain-list-item:nth-child(2n) {
-  margin-right: 0;
-}
-.contain .contain-list-item .contain-list-item-img {
-  position: absolute;
-  background-image: url(../images/app-comtain.jpeg);
-  width: 175px;
-  height: 233px;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  box-shadow: 3px 3px 2px 0 hsla(203, 6%, 45%, 0.3);
-  top: -20px;
-}
-.contain .contain-list-item .contain-list-item-detail {
-  margin-left: 205px;
+.main .home .title .right {
   float: right;
+  width: 60px;
+  height: 24px;
 }
-.contain .contain-list-item .contain-list-item-detail .contain-item-title {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin-top: 30px;
-  width: 286px;
-  height: 48px;
-  font-size: 18px;
+.main .home .title .right a {
+  display: flex;
+  padding-left: 12px;
   line-height: 24px;
-  color: #000;
-}
-.contain .contain-list-item .contain-list-item-detail .contain-item-time {
-  display: flex;
-  align-items: center;
-  margin-top: 19px;
-}
-.contain .contain-list-item .contain-list-item-detail .contain-item-time .contain-item-time-icon {
-  background-image: url(../images/app-content-time-icon.png);
-  width: 12px;
-  height: 13px;
-  margin-right: 8px;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-.contain .contain-list-item .contain-list-item-detail .contain-item-time span {
-  color: #999;
-}
-.contain .contain-list-item .contain-list-item-detail .contain-item-adress {
-  display: flex;
-  align-items: center;
-  max-width: 260px;
-  margin-top: 10px;
-}
-.contain .contain-list-item .contain-list-item-detail .contain-item-adress .contain-item-adress-icon {
-  background-image: url(../images/app-content-address-icon.png);
-  width: 12px;
-  height: 13px;
-  margin-right: 8px;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-.contain .contain-list-item .contain-list-item-detail .contain-item-adress span {
-  color: #999;
-}
-.contain .contain-list-item .contain-list-item-detail .contain-item-price {
-  margin-top: 40px;
-  display: flex;
-  align-items: flex-end;
-}
-.contain .contain-list-item .contain-list-item-detail .contain-item-price .contain-item-price-one {
-  color: #F25D8E;
-  font-weight: 700;
-  font-size: 18px;
-  display: block;
-  margin-bottom: 5px;
-}
-.contain .contain-list-item .contain-list-item-detail .contain-item-price .contain-item-price-two {
-  font-size: 28px;
-  color: #F25D8E;
-  letter-spacing: 1px;
-  display: block;
-  margin-left: 4px;
-}
-.contain .contain-list-item .contain-list-item-detail .contain-item-price .contain-item-price-three {
+  text-align: center;
+  text-decoration: none;
+  color: rgb(96, 92, 92);
   font-size: 12px;
-  color: #999;
+  width: 60px;
+  height: 24px;
+  border: 1px solid silver;
+}
+.main .home .img-big {
+  float: left;
+  width: 422px;
+  height: 242px;
+}
+.main .home .img-big img {
+  width: 100%;
+  height: 100%;
+}
+.main .home .img-small {
+  float: right;
+  width: 864px;
+}
+.main .home .img-small .small-list {
+  width: 206px;
+  height: 116px;
+  display: inline-block;
+  margin-left: 6px;
+  margin-bottom: 6px;
+}
+.main .home .img-small .small-list img {
+  width: 100%;
+  height: 100%;
   display: block;
-  margin-left: 5px;
-  margin-bottom: 5px;
-}
-.contain .contain-list-item .contain-list-item-detail .contain-item-price .contain-item-price-four {
-  max-width: 80px;
-  border: 1px solid #fb7299;
-  color: #fb7299;
-  margin-left: 8px;
-  font-size: 12px;
-  display: block;
-  margin-bottom: 5px;
-}
-.contain .contain-list-item .contain-list-item-detail .contain-item-price .contain-item-price-five {
-  max-width: 80px;
-  border: 1px solid #fb7299;
-  color: #fb7299;
-  margin-left: 8px;
-  font-size: 12px;
-  display: block;
-  margin-bottom: 5px;
-}
-.pagination {
-  display: flex;
-  justify-content: center;
-  margin: 40px;
-  margin-bottom: 55px;
-}
-.pagination .pagination-left {
-  background-image: url(../images/pagination-left.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  width: 17px;
-  height: 17px;
-}
-.pagination .pagination-page {
-  padding: 0 30px;
-}
-.pagination .pagination-page .page-num {
-  cursor: pointer;
-  font-size: 12px;
-  font-family: Arial-Black;
-  padding: 0 13px;
-}
-.pagination .pagination-right {
-  background-image: url(../images/pagination-right.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  width: 17px;
-  height: 17px;
-}
+}/*# sourceMappingURL=music.css.map */

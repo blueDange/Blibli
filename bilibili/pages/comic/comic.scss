@@ -3,22 +3,27 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 .clearfix:before,
 .clearfix:after {
-	content: "";
-	display: table;
+    content: "";
+    display: table;
 }
+
 .clearfix:after {
-clear: both;
+    clear: both;
 }
+
 .clearfix {
-	*zoom : 1;
+    *zoom: 1;
 }
+
 .nav-bar {
     background: #fff;
     height: 60px;
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / .2);
 }
+
 .nav-bar {
     .nav-header {
         width: 1160px;
@@ -26,19 +31,22 @@ clear: both;
         height: 100%;
         display: flex;
         align-items: center;
+
         .nav-header-logo {
-            background: url(../images/comic-vip-buy.png) no-repeat;
+            background: url(../../assets/images/comic-vip-buy.png) no-repeat;
             width: 91px;
             height: 20px;
             background-size: 100% 100%;
             flex-shrink: 0;
         }
+
         .nav-header-logo-sub {
             padding-left: 3px;
             font-size: 14px;
         }
+
         .nav-header-tv-logo {
-            background-image: url(../images/comic-watch.png);
+            background-image: url(../../assets/images/comic-watch.png);
             background-repeat: no-repeat;
             cursor: pointer;
             margin-right: 6px;
@@ -48,16 +56,19 @@ clear: both;
             height: 18px;
             background-size: 100% 100%;
         }
+
         .nav-header-mainsite {
             font-size: 14px;
             color: #636c7b;
             line-height: 14px;
             width: 90px;
         }
+
         // 搜索框
         .nav-header-input {
             flex: 1 1;
             position: relative;
+
             input {
                 cursor: auto;
                 font-size: 12px;
@@ -71,94 +82,106 @@ clear: both;
                 border-radius: 40px;
                 outline: none;
             }
+
             .nav-header-input-search {
                 position: absolute;
                 right: 28px;
                 bottom: 10px;
-                background-image: url(../images/comic-big-J.png);
+                background-image: url(../../assets/images/comic-big-J.png);
                 background-repeat: no-repeat;
                 width: 18px;
                 height: 18px;
                 background-size: 100% 100%;
             }
-            }
-            .user-info {
-                background-image: url(../images/touxiang.jpg);
-                z-index: 9;
-                transition: all .3s;
-                background-repeat: no-repeat;
+        }
+
+        .user-info {
+            background-image: url(../../assets/images/touxiang.jpg);
+            z-index: 9;
+            transition: all .3s;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            margin-left: 40px;
+            margin-right: 10px;
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+        }
+
+        .nav-header-order {
+            display: flex;
+            align-items: center;
+            margin-left: 25px;
+
+            .nav-header-order-info {
+                background-image: url(../../assets/images/comic-D.png);
                 background-size: 100% 100%;
-                margin-left: 40px;
-                margin-right: 10px;
-                width: 40px;
-                height: 40px;
-                border-radius: 20px;
+                background-repeat: no-repeat;
+                width: 18px;
+                height: 18px;
+                flex-shrink: 0;
             }
-            .nav-header-order {
-                display: flex;
-                align-items: center;
-                margin-left: 25px;
-                .nav-header-order-info {
-                    background-image: url(../images/comic-D.png);
-                    background-size: 100% 100%;
-                    background-repeat: no-repeat;
-                    width: 18px;
-                    height: 18px;
-                    flex-shrink: 0;
-                }
-                .nav-header-order-center {
-                    z-index: 100;
-                    font-size: 14px;
-                    color: #636c7b;
-                    line-height: 14px;
-                    width: 60px;
-                }
+
+            .nav-header-order-center {
+                z-index: 100;
+                font-size: 14px;
+                color: #636c7b;
+                line-height: 14px;
+                width: 60px;
             }
         }
     }
+}
+
 // 第二行
 .showhome {
-        background-image: url(../images/comic-bg.png);
-        background-size: 100% 100%;
-        width: 239px;
+    background-image: url(../../assets/images/comic-bg.png);
+    background-size: 100% 100%;
+    width: 239px;
+    height: 56px;
+    margin: 0 auto;
+    margin-top: 16px;
+
+    .showhome-left {
+        float: left;
+        width: 126px;
         height: 56px;
-        margin: 0 auto;
-        margin-top: 16px;
-        .showhome-left {
-                float: left;
-                width: 126px;
-                height: 56px;
-                text-align: center;
-            a {
-                text-decoration: none;
-                font-size: 20px;
-                color: #000;
-                line-height: 56px;
-                font-weight: 700;
-            }
-        }
-        // .box-shadow {
-        //         box-shadow: 3px 7px 20px 1px rgb(0 0 0 / .2);
-        // }
-        .showhome-right {
-                float: left;
-                width: 113px;
-                height: 56px;
-                text-align: center;
-            a {
-                text-decoration: none;
-                font-size: 20px;
-                color: #BCBCBC;
-                line-height: 56px;
-            }
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #000;
+            line-height: 56px;
+            font-weight: 700;
         }
     }
+
+    // .box-shadow {
+    //         box-shadow: 3px 7px 20px 1px rgb(0 0 0 / .2);
+    // }
+    .showhome-right {
+        float: left;
+        width: 113px;
+        height: 56px;
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #BCBCBC;
+            line-height: 56px;
+        }
+    }
+}
+
 .selector {
     width: 100%;
     height: 120px;
     background-color: #fff;
-    box-shadow: 0 0 20px 2px  rgb(0 0 0 / .1);
+    box-shadow: 0 0 20px 2px rgb(0 0 0 / .1);
     margin-top: 20px;
+
     .selector-one {
         display: flex;
         width: 1160px;
@@ -166,25 +189,30 @@ clear: both;
         line-height: 40px;
         margin: 0 auto;
         border-bottom: 1px dashed #e5e9ef;
+
         .one-title {
             width: 90px;
             font-size: 12px;
             color: #99a2aa;
         }
+
         .one-title-selector {
             .city-list {
                 list-style: none;
                 display: flex;
+
                 .city-item {
                     width: 90px;
                     font-size: 12px;
                     color: #6D757A;
                     cursor: pointer;
                 }
+
                 .first {
                     color: #F25D8E;
                     width: 140px;
                 }
+
                 .last {
                     flex: 1 1;
                     text-align: right;
@@ -193,21 +221,24 @@ clear: both;
         }
     }
 }
+
 .big-contain {
     background-color: #F4F5F7;
 }
+
 .contain {
     width: 1160px;
     margin: 0 auto;
     // height: 100px;
     display: block;
-    
-    
-    .contain-list-item {  
-        &:nth-child(2n){
+
+
+    .contain-list-item {
+        &:nth-child(2n) {
             margin-right: 0;
-            
+
         }
+
         position: relative;
         display: flex;
         margin-top: 60px;
@@ -218,9 +249,10 @@ clear: both;
         box-shadow: 0 0 15px 0 hsl(203deg 6% 45% / 9%);
         border-radius: 8px;
         float: left;
+
         .contain-list-item-img {
             position: absolute;
-            background-image: url(../images/app-comtain.jpeg);
+            background-image: url(../../assets/images/app-comtain.jpeg);
             width: 175px;
             height: 233px;
             background-repeat: no-repeat;
@@ -228,9 +260,11 @@ clear: both;
             box-shadow: 3px 3px 2px 0 hsl(203deg 6% 45% / 30%);
             top: -20px;
         }
+
         .contain-list-item-detail {
             margin-left: 205px;
             float: right;
+
             .contain-item-title {
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -239,45 +273,53 @@ clear: both;
                 height: 48px;
                 font-size: 18px;
                 line-height: 24px;
-                color: #000;                
+                color: #000;
             }
+
             .contain-item-time {
                 display: flex;
                 align-items: center;
                 margin-top: 19px;
+
                 .contain-item-time-icon {
-                    background-image: url(../images/app-content-time-icon.png);
+                    background-image: url(../../assets/images/app-content-time-icon.png);
                     width: 12px;
                     height: 13px;
                     margin-right: 8px;
                     background-size: 100% 100%;
                     background-repeat: no-repeat;
                 }
+
                 span {
                     color: #999;
                 }
             }
-            .contain-item-adress{
+
+            .contain-item-adress {
                 display: flex;
                 align-items: center;
                 max-width: 260px;
                 margin-top: 10px;
-                .contain-item-adress-icon{
-                    background-image: url(../images/app-content-address-icon.png);
+
+                .contain-item-adress-icon {
+                    background-image: url(../../assets/images/app-content-address-icon.png);
                     width: 12px;
                     height: 13px;
                     margin-right: 8px;
                     background-size: 100% 100%;
                     background-repeat: no-repeat;
                 }
+
                 span {
                     color: #999;
                 }
             }
+
             .contain-item-price {
                 margin-top: 40px;
                 display: flex;
                 align-items: flex-end;
+
                 .contain-item-price-one {
                     color: #F25D8E;
                     font-weight: 700;
@@ -286,6 +328,7 @@ clear: both;
                     margin-bottom: 5px;
 
                 }
+
                 .contain-item-price-two {
                     font-size: 28px;
                     color: #F25D8E;
@@ -293,6 +336,7 @@ clear: both;
                     display: block;
                     margin-left: 4px;
                 }
+
                 .contain-item-price-three {
                     font-size: 12px;
                     color: #999;
@@ -300,6 +344,7 @@ clear: both;
                     margin-left: 5px;
                     margin-bottom: 5px;
                 }
+
                 .contain-item-price-four {
                     max-width: 80px;
                     border: 1px solid #fb7299;
@@ -310,6 +355,7 @@ clear: both;
                     margin-bottom: 5px;
 
                 }
+
                 .contain-item-price-five {
                     max-width: 80px;
                     border: 1px solid #fb7299;
@@ -323,20 +369,24 @@ clear: both;
         }
     }
 }
+
 .pagination {
     display: flex;
     justify-content: center;
     margin: 40px;
     margin-bottom: 55px;
+
     .pagination-left {
-        background-image: url(../images/pagination-left.png);
+        background-image: url(../../assets/images/pagination-left.png);
         background-size: 100% 100%;
         background-repeat: no-repeat;
         width: 17px;
         height: 17px;
     }
+
     .pagination-page {
         padding: 0 30px;
+
         .page-num {
             cursor: pointer;
             font-size: 12px;
@@ -344,13 +394,12 @@ clear: both;
             padding: 0 13px;
         }
     }
+
     .pagination-right {
-        background-image: url(../images/pagination-right.png);
+        background-image: url(../../assets/images/pagination-right.png);
         background-size: 100% 100%;
         background-repeat: no-repeat;
         width: 17px;
         height: 17px;
     }
 }
-
-    

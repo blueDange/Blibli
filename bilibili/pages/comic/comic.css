@@ -3,22 +3,27 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 .clearfix:before,
 .clearfix:after {
   content: "";
   display: table;
 }
+
 .clearfix:after {
   clear: both;
 }
+
 .clearfix {
   *zoom: 1;
 }
+
 .nav-bar {
   background: #fff;
   height: 60px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
+
 .nav-bar .nav-header {
   width: 1160px;
   margin: 0 auto;
@@ -27,7 +32,7 @@
   align-items: center;
 }
 .nav-bar .nav-header .nav-header-logo {
-  background: url(../images/comic-vip-buy.png) no-repeat;
+  background: url(../../assets/images/comic-vip-buy.png) no-repeat;
   width: 91px;
   height: 20px;
   background-size: 100% 100%;
@@ -38,7 +43,7 @@
   font-size: 14px;
 }
 .nav-bar .nav-header .nav-header-tv-logo {
-  background-image: url(../images/comic-watch.png);
+  background-image: url(../../assets/images/comic-watch.png);
   background-repeat: no-repeat;
   cursor: pointer;
   margin-right: 6px;
@@ -75,14 +80,14 @@
   position: absolute;
   right: 28px;
   bottom: 10px;
-  background-image: url(../images/comic-big-J.png);
+  background-image: url(../../assets/images/comic-big-J.png);
   background-repeat: no-repeat;
   width: 18px;
   height: 18px;
   background-size: 100% 100%;
 }
 .nav-bar .nav-header .user-info {
-  background-image: url(../images/touxiang.jpg);
+  background-image: url(../../assets/images/touxiang.jpg);
   z-index: 9;
   transition: all 0.3s;
   background-repeat: no-repeat;
@@ -99,7 +104,7 @@
   margin-left: 25px;
 }
 .nav-bar .nav-header .nav-header-order .nav-header-order-info {
-  background-image: url(../images/comic-D.png);
+  background-image: url(../../assets/images/comic-D.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 18px;
@@ -113,8 +118,9 @@
   line-height: 14px;
   width: 60px;
 }
+
 .showhome {
-  background-image: url(../images/comic-bg.png);
+  background-image: url(../../assets/images/comic-bg.png);
   background-size: 100% 100%;
   width: 239px;
   height: 56px;
@@ -134,9 +140,6 @@
   line-height: 56px;
   font-weight: 700;
 }
-.showhome .box-shadow {
-  box-shadow: 3px 7px 20px 1px rgba(0, 0, 0, 0.2);
-}
 .showhome .showhome-right {
   float: left;
   width: 113px;
@@ -149,6 +152,7 @@
   color: #BCBCBC;
   line-height: 56px;
 }
+
 .selector {
   width: 100%;
   height: 120px;
@@ -187,9 +191,11 @@
   flex: 1 1;
   text-align: right;
 }
+
 .big-contain {
   background-color: #F4F5F7;
 }
+
 .contain {
   width: 1160px;
   margin: 0 auto;
@@ -203,7 +209,7 @@
   width: 560px;
   height: 237px;
   background: #fff;
-  box-shadow: 0 0 15px 0 hsla(203, 6%, 45%, 0.09);
+  box-shadow: 0 0 15px 0 hsla(203deg, 6%, 45%, 0.09);
   border-radius: 8px;
   float: left;
 }
@@ -217,7 +223,7 @@
   height: 233px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  box-shadow: 3px 3px 2px 0 hsla(203, 6%, 45%, 0.3);
+  box-shadow: 3px 3px 2px 0 hsla(203deg, 6%, 45%, 0.3);
   top: -20px;
 }
 .contain .contain-list-item .contain-list-item-detail {
@@ -240,7 +246,7 @@
   margin-top: 19px;
 }
 .contain .contain-list-item .contain-list-item-detail .contain-item-time .contain-item-time-icon {
-  background-image: url(../images/app-content-time-icon.png);
+  background-image: url(../../assets/images/app-content-time-icon.png);
   width: 12px;
   height: 13px;
   margin-right: 8px;
@@ -257,7 +263,7 @@
   margin-top: 10px;
 }
 .contain .contain-list-item .contain-list-item-detail .contain-item-adress .contain-item-adress-icon {
-  background-image: url(../assets/images/app-content-address-icon.png);
+  background-image: url(../../assets/images/app-content-address-icon.png);
   width: 12px;
   height: 13px;
   margin-right: 8px;
@@ -311,6 +317,7 @@
   display: block;
   margin-bottom: 5px;
 }
+
 .pagination {
   display: flex;
   justify-content: center;
@@ -318,7 +325,7 @@
   margin-bottom: 55px;
 }
 .pagination .pagination-left {
-  background-image: url(../images/pagination-left.png);
+  background-image: url(../../assets/images/pagination-left.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 17px;
@@ -334,9 +341,9 @@
   padding: 0 13px;
 }
 .pagination .pagination-right {
-  background-image: url(../images/pagination-right.png);
+  background-image: url(../../assets/images/pagination-right.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 17px;
   height: 17px;
-}
+}/*# sourceMappingURL=comic.css.map */
